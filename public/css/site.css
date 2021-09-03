@@ -12,3 +12,11 @@ footer {
   background-color: #aaa;
   padding: 10px;
 }
+
+#btn {
+  font-weight: bold;
+}
+
+.spa {
+  font-weight: bold;
+}
