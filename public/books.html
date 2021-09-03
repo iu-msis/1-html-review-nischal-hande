@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <title>Books</title>
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fake Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./books.html">Books</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<body>
+  
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+ 
+  <div class="table-format col-lg-12 text-center">
+      <table class="table table-dark table-hover">
+          <thead>
+              <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Author(s)</th>
+                  <th scope="col">Year Published</th>
+                  <th scope="col">Publisher</th>
+                  <th scope="col">Page count</th>
+                  <th scope="col">MSRP</th>
+              </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <th scope="row">1</th>
+                  <th scope="row">Leading</th>
+                  <th scope="row">Alex Ferguson, Michael Moritz</th>
+                  <th scope="row">2015</th>
+                  <th scope="row">Hachette Books</th>
+                  <th scope="row">416</th>
+                  <th scope="row">$22.97</th>
+              </tr>  
+            </tbody>
+            <tbody>
+                <tr>
+                   <th scope="row">2</th>
+                   <th scope="row">Scholes: My Story</th>
+                   <th scope="row">Paul Scholes</th>
+                   <th scope="row">2012</th>
+                   <th scope="row">Simon & Schuster UK</th>
+                   <th scope="row">299</th>
+                   <th scope="row">$13.79</th>
+               </tr>  
+             </tbody>
+             <tbody>
+                <tr>
+                   <th scope="row">3</th>
+                   <th scope="row">Jose Mourinho: The Art of Winning</th>
+                   <th scope="row">Andrew J. Kirby</th>
+                   <th scope="row">2016</th>
+                   <th scope="row">Red Sportswriting</th>
+                   <th scope="row">276</th>
+                   <th scope="row">$10.99</th>
+               </tr>  
+             </tbody>
+             <tbody>
+                <tr>
+                   <th scope="row">4</th>
+                   <th scope="row">My Turn: The Autobiography</th>
+                   <th scope="row">Johan Cruyff</th>
+                   <th scope="row">2016</th>
+                   <th scope="row">Macmillan</th>
+                   <th scope="row">320</th>
+                   <th scope="row">$30.47</th>
+               </tr>  
+             </tbody>
+             <tbody>
+                <tr>
+                   <th scope="row">5</th>
+                   <th scope="row">I Am Zlatan: My Story On and Off the Field</th>
+                   <th scope="row">Zlatan Ibrahimovic</th>
+                   <th scope="row">2014</th>
+                   <th scope="row">Random House Trade Paperbacks</th>
+                   <th scope="row">400</th>
+                   <th scope="row">$11.99</th>
+               </tr>  
+             </tbody>
+      </table>
+
+  </div>
+
+  <form class="bg-light">
+
+  <div class="mb-3 form-item-format row">
+      <label for="auth" class="form-label">Author(s)</label>
+      <input type="text" class="form-control" placeholder="Author(s)" id="auth">
+  </div>
+  <div class="mb-3 form-item-format row">
+    <label for="yearpub" class="form-label">Author(s)</label>
+    <input type="text" class="form-control" placeholder="Author(s)" id="auth">
+  </div>
+  <div class="mb-3 form-item-format row">
+    <label for="pub" class="form-label">Author(s)</label>
+    <input type="text" class="form-control" placeholder="Author(s)" id="auth">
+  </div>
+  <div class="mb-3 form-item-format row">
+    <label for="pgcount" class="form-label">Author(s)</label>
+    <input type="text" class="form-control" placeholder="Author(s)" id="auth">
+  </div>
+  <div class="mb-3 form-item-format row">
+    <label for="msrp" class="form-label">Author(s)</label>
+    <input type="text" class="form-control" placeholder="Author(s)" id="auth">
+  </div>
+  <div class="mb-3 form-item-format row">
+      <label for="auth" class="form-label">Author(s)</label>
+      <input type="text" class="form-control" placeholder="Author(s)" id="auth">
+  </div>
+  <div class="mb-3 form-item-format row">
+    <label for="auth" class="form-label">Author(s)</label>
+    <input type="text" class="form-control" placeholder="Author(s)" id="auth">
+  </div>
+
+  <div class="form-item-format row">
+    <input type="btn btn-success" type="submit" value="Add Book">
+  </div>
+
+  </form>
+
+  </body>
+  </html>
