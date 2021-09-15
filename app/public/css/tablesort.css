@@ -1,24 +1,5 @@
-header {
-  background-color: #aaa;
-  margin-bottom: 10px;
-}
-
-nav {
-  background-color: #aaa;
-}
-
-
-footer {
-  background-color: #aaa;
-  padding: 10px;
-}
-
-#btn {
-  font-weight: bold;
-}
-
-.spa {
-  font-weight: bold;
+.btn-success {
+	font-weight: bold;
 }
 
 th[role=columnheader]:not(.no-sort) {
@@ -28,8 +9,8 @@ th[role=columnheader]:not(.no-sort) {
 th[role=columnheader]:not(.no-sort):after {
 	content: '';
 	float: right;
-	margin-top: 7px;
-	border-width: 0 4px 4px;
+	margin-top: 8px; /* change to css */
+	border-width: 4px 4px 4px; /* change to css */
 	border-style: solid;
 	border-color: #404040 transparent;
 	visibility: hidden;
@@ -41,8 +22,8 @@ th[role=columnheader]:not(.no-sort):after {
 }
 
 th[aria-sort=ascending]:not(.no-sort):after {
-	border-bottom: none;
-	border-width: 4px 4px 0;
+	border-bottom: black; /* change to css */
+	border-width: 4px 4px 4px; /* change to css */
 }
 
 th[aria-sort]:not(.no-sort):after {

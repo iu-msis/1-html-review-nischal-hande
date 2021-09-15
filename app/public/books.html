@@ -7,9 +7,13 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  
+  <!-- <script src="https://unpkg.com/vue@next"></script> -->
 
+  <link rel="stylesheet" href="./css/tablesort.css" />
+  
   <title>Books</title>
-  <link rel="stylesheet" href="css/site.css">
+  <!-- <link rel="stylesheet" href="css/site.css"> -->
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -43,79 +47,74 @@
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
  
-  <div class="table-format col-lg-12 text-center">
+  <div class="row col-lg-12 text-center">
       <hr>
-      <table class="table table-dark table-hover" id="sort">
+      <table id="books" class="table table-hover table-light" >
           <thead>
               <tr>
-                  <th scope="col"><div class="spa">#</div></th>
-                  <th scope="col"><div class="spa">Title</div></th>
-                  <th scope="col"><div class="spa">Author(s)</div></th>
-                  <th scope="col"><div class="spa">Year Published</div></th>
-                  <th scope="col"><div class="spa">Publisher</div></th>
-                  <th scope="col"><div class="spa">Page count</div></th>
-                  <th scope="col"><div class="spa">MSRP</div></th>
+                  <th scope="col">#</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Author(s)</th>
+                  <th scope="col">Year Published</th>
+                  <th scope="col">Publisher</th>
+                  <th scope="col">Page count</th>
+                  <th scope="col">MSRP</th>
               </tr>
             </thead>
             <tbody>
                <tr>
-                  <th scope="row">1</th>
-                  <th scope="row">Leading</th>
-                  <th scope="row">Alex Ferguson, Michael Moritz</th>
-                  <th scope="row">2015</th>
-                  <th scope="row">Hachette Books</th>
-                  <th scope="row">416</th>
-                  <th scope="row">$22.97</th>
+                  <td scope="row">1</td>
+                  <td scope="row">Leading</td>
+                  <td scope="row">Alex Ferguson, Michael Moritz</td>
+                  <td scope="row">2015</td>
+                  <td scope="row">Hachette Books</td>
+                  <td scope="row">416</td>
+                  <td scope="row">$22.97</td>
               </tr>  
-            </tbody>
-            <tbody>
+
                 <tr>
-                   <th scope="row">2</th>
-                   <th scope="row">Scholes: My Story</th>
-                   <th scope="row">Paul Scholes</th>
-                   <th scope="row">2012</th>
-                   <th scope="row">Simon & Schuster UK</th>
-                   <th scope="row">299</th>
-                   <th scope="row">$13.79</th>
+                   <td scope="row">2</td>
+                   <td scope="row">Scholes: My Story</td>
+                   <td scope="row">Paul Scholes</td>
+                   <td scope="row">2012</td>
+                   <td scope="row">Simon & Schuster UK</td>
+                   <td scope="row">299</td>
+                   <td scope="row">$13.79</td>
                </tr>  
-             </tbody>
-             <tbody>
+
                 <tr>
-                   <th scope="row">3</th>
-                   <th scope="row">Jose Mourinho: The Art of Winning</th>
-                   <th scope="row">Andrew J. Kirby</th>
-                   <th scope="row">2016</th>
-                   <th scope="row">Red Sportswriting</th>
-                   <th scope="row">276</th>
-                   <th scope="row">$10.99</th>
+                   <td scope="row">3</td>
+                   <td scope="row">Jose Mourinho: The Art of Winning</td>
+                   <td scope="row">Andrew J. Kirby</td>
+                   <td scope="row">2016</td>
+                   <td scope="row">Red Sportswriting</td>
+                   <td scope="row">276</td>
+                   <td scope="row">$10.99</td>
                </tr>  
-             </tbody>
-             <tbody>
+
                 <tr>
-                   <th scope="row">4</th>
-                   <th scope="row">My Turn: The Autobiography</th>
-                   <th scope="row">Johan Cruyff</th>
-                   <th scope="row">2016</th>
-                   <th scope="row">Macmillan</th>
-                   <th scope="row">320</th>
-                   <th scope="row">$30.47</th>
+                   <td scope="row">4</td>
+                   <td scope="row">My Turn: The Autobiography</td>
+                   <td scope="row">Johan Cruyff</td>
+                   <td scope="row">2016</td>
+                   <td scope="row">Macmillan</td>
+                   <td scope="row">320</td>
+                   <td scope="row">$30.47</td>
                </tr>  
-             </tbody>
-             <tbody>
+ 
                 <tr>
-                   <th scope="row">5</th>
-                   <th scope="row">I Am Zlatan: My Story On and Off the Field</th>
-                   <th scope="row">Zlatan Ibrahimovic</th>
-                   <th scope="row">2014</th>
-                   <th scope="row">Random House Trade Paperbacks</th>
-                   <th scope="row">400</th>
-                   <th scope="row">$11.99</th>
+                   <td scope="row">5</td>
+                   <td scope="row">I Am Zlatan: My Story On and Off the Field</td>
+                   <td scope="row">Zlatan Ibrahimovic</td>
+                   <td scope="row">2014</td>
+                   <td scope="row">Random House Trade Paperbacks</td>
+                   <td scope="row">400</td>
+                   <td scope="row">$11.99</td>
                </tr>  
              </tbody>
       </table>
 
   </div>
-
   
   <form class="bg-light" >
   <div class="form-item-format row mb-2">
@@ -156,13 +155,12 @@
   </div>
   </form>
 
-  </body>
-  
-
-  <script src="js/tablesort.min.js"></script>
+  <script src="./js/tablesort.min.js"></script>
 
   <script>
-    new Tablesort(document.getElementById("sort"));
+    new Tablesort(document.getElementById('books'));
   </script>
 
-  </html>
+ </body>
+  
+</html>
