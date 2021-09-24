@@ -43,7 +43,7 @@
     </div>
   </nav>
 
-  <body>
+  <body class="bg">
     <div class="container">
        
       <div id="offerApp" class="row align-items-start">
@@ -66,6 +66,10 @@
         <h5><a v-bind:href="'mailto:'+person.email"> {{ person.email }} </a></h5>
         <img v-bind:src="person.picture.large">  
         </div>
+
+        <form v-on:submit.prevent="fetchUserData">
+          <button class="btn-info" type="submit">View New User</button>
+        </form>
       </div>
 
     </div>

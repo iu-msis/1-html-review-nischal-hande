@@ -2,6 +2,14 @@
 	font-weight: bold;
 }
 
+.btn-info {
+	font-weight: bold;
+}
+
+.bg {
+	background-color: gainsboro;
+}
+
 th[role=columnheader]:not(.no-sort) {
 	cursor: pointer;
 }
