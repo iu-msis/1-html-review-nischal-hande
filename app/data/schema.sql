@@ -14,7 +14,10 @@ CREATE TABLE book (
 
 INSERT INTO book (id, title, author, yearPublished, publisher, pgCnt, msrp) VALUES 
 (1, 'Leading', 'Alex Ferguson', 2015, 'Hachette Books', 416, '$22.97'),
-(2, 'Jose Mourinho: The Art of Winning', 'Andrew J. Kirby', 2016, 'Red Sportswriting', 276, '$10.99');
+(2, 'Scholes: My Story', 'Paul Scholes', 2012, 'Simon & Schuster UK', 299, '$13.79'),
+(3, 'Jose Mourinho: The Art of Winning', 'Andrew J. Kirby', 2016, 'Red Sportswriting', 276, '$10.99'),
+(4, 'My Turn: The Autobiography', 'Johan Cruyff', 2016, 'Macmillan', 320, '$30.47'),
+(5, 'I Am Zlatan: My Story On and Off the Field', 'Zlatan Ibrahimovic', 2014, 'Random House Trade Paperbacks', 400, '$11.99');
 
 -- SELECT * FROM book;
 
