@@ -1,9 +1,9 @@
 CREATE DATABASE IF NOT EXISTS hwdb;
 USE hwdb;
 
-DROP TABLE IF EXISTS book;
+DROP TABLE book;
 CREATE TABLE book (
-	id int PRIMARY KEY ,
+	id int PRIMARY KEY AUTO_INCREMENT,
 	title varchar(48) NOT NULL,
     author varchar(48) NOT NULL,
     yearPublished int(8) NOT NULL,
@@ -19,7 +19,7 @@ INSERT INTO book (id, title, author, yearPublished, publisher, pgCnt, msrp) VALU
 (4, 'My Turn: The Autobiography', 'Johan Cruyff', 2016, 'Macmillan', 320, '$30.47'),
 (5, 'I Am Zlatan: My Story On and Off the Field', 'Zlatan Ibrahimovic', 2014, 'Random House Trade Paperbacks', 400, '$11.99');
 
--- SELECT * FROM book;
+SELECT * FROM book;
 
 -- COMMIT;
 

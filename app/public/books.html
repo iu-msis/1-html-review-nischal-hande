@@ -53,7 +53,6 @@
       <table id="books" class="table table-hover table-light" >
           <thead>
               <tr>
-                  <th scope="col">#</th>
                   <th scope="col">Title</th>
                   <th scope="col">Author(s)</th>
                   <th scope="col">Year Published</th>
@@ -64,7 +63,6 @@
             </thead>
             <tbody>
               <tr v-for="b in books">
-                <td>{{ b.id }}</td>
                 <td>{{ b.title }}</td>
                 <td>{{ b.author }}</td>
                 <td>{{ b.yearPublished }}</td>
@@ -125,55 +123,56 @@
                
             </tbody>
       </table>
-   </div>
   
-  
-  <form class="bg-light" >
+  <h3> Add Book </h3>
+  <form class="bg-light" v-on:submit.prevent="postNewBook">
+    <div class="form-item-format row mb-2">
+      <label for="auth" class="col-sm-2 col-form-label">Title</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Title" id="auth" v-model="bookForm.title">
+      </div>
+    </div>
   <div class="form-item-format row mb-2">
     <label for="auth" class="col-sm-2 col-form-label">Author(s)</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" placeholder="Author(s)" id="auth">
+      <input type="text" class="form-control" placeholder="Author(s)" id="auth"v-model="bookForm.author">
     </div>
   </div>
   <div class="form-item-format row mb-2 mb-2">
     <label for="yearpub" class="col-sm-2 col-form-label">Year Published</label>
     <div class="col-sm-10">
-        <input type="text" class="form-control" placeholder="Year Published" id="yearpub">
+        <input type="text" class="form-control" placeholder="Year Published" id="yearpub" v-model="bookForm.yearPublished">
     </div>
   </div>
   <div class="form-item-format row mb-2">
     <label for="pub" class="col-sm-2 col-form-label">Publisher</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" placeholder="Publisher" id="pub">
+      <input type="text" class="form-control" placeholder="Publisher" id="pub" v-model="bookForm.publisher">
     </div>
   </div>
   <div class="form-item-format row mb-2">
     <label for="pgcount" class="col-sm-2 col-form-label">Page count</label>
     <div class="col-sm-10">
-        <input type="text" class="form-control" placeholder="Page count" id="pgcount">
+        <input type="text" class="form-control" placeholder="Page count" id="pgcount" v-model="bookForm.pgCnt">
     </div>
   </div>
   <div class="form-item-format row mb-2">
     <label for="msrp" class="col-sm-2 col-form-label">MSRP</label>
     <div class="col-sm-10">
-        <input type="text" class="form-control" placeholder="MSRP" id="msrp">
+        <input type="text" class="form-control" placeholder="MSRP" id="msrp" v-model="bookForm.msrp">
     </div>
   </div>
-
-  <div class="form-item-format row mb-2">
-    <div class="col-sm-10">
-      <input class="btn btn-success col-sm-2 col-form-label" id="btn" type="submit" value="Add Book">
-    </div>  
-  </div>
+  <button type="submit" class="btn btn-primary">Add Book</button>
   </form>
+</div>
 
-  <script src="./js/tablesort.min.js"></script>
+<script src="./js/tablesort.min.js"></script>
 
-  <script>
-    new Tablesort(document.getElementById('books'));
-  </script>
+<script>
+  new Tablesort(document.getElementById('books'));
+</script>
 
-  <script src="./js/index.js"></script>
+<script src="./js/index.js"></script>
 </body>
   
 </html>
